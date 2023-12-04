@@ -1,5 +1,9 @@
 <x-layout.auth>
-
+    <style>
+        .alert-danger{
+            color: red;
+        }
+        </style>
     <div x-data="auth">
         <div class="absolute inset-0">
             <img src="/assets/images/auth/bg-gradient.png" alt="image" class="h-full w-full object-cover" />
@@ -19,6 +23,17 @@
                             <p class="text-base font-bold leading-normal text-white-dark">Enter your email and password to login</p>
                         </div>
                         <form class="space-y-5 dark:text-white" method="POST" action="/login">
+
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
+
                             @csrf
                             <div>
                                 <label for="Email">Email</label>
