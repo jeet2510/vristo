@@ -51,7 +51,7 @@
     <table id="company-table" class="table">
         <thead>
             <tr>
-                <th>Company Name</th>
+                <th>Company Name 5656</th>
                 <th>Contact Person Full Name</th>
                 <th>Selected Plan</th>
                 <th>Plan Type</th>
