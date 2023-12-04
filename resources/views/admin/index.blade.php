@@ -45,6 +45,9 @@
     .alert-success{
         color: #5CB85C;
     }
+
+    
+
 </style>
     <div class="container_table">
         <a href="{{ route('admin.create') }}" class="btn btn-primary btn-sm mb-2" style="width: 50px; float:right;">Add</a>
