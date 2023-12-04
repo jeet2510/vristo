@@ -45,13 +45,16 @@
     .alert-success{
         color: #5CB85C;
     }
+
+    
+
 </style>
     <div class="container_table">
         <a href="{{ route('admin.create') }}" class="btn btn-primary btn-sm mb-2" style="width: 50px; float:right;">Add</a>
     <table id="company-table" class="table">
         <thead>
             <tr>
-                <th>Company Name</th>
+                <th>Company Name 5656</th>
                 <th>Contact Person Full Name</th>
                 <th>Selected Plan</th>
                 <th>Plan Type</th>
